@@ -1,0 +1,3 @@
+# Optional local vector-store backend.
+# Install only if you explicitly want Chroma-backed retrieval in this environment.
+chromadb==0.5.21
