@@ -24,7 +24,7 @@ async def list_tickers() -> dict:
 @mcp.tool()
 async def get_ticker(symbol: str) -> dict:
     """Get public ticker/market data for a contract symbol, for example BTCUSD or P-BTC-90000-260131."""
-    return await delta_get("/v2/tickers", {"契约": symbol, "symbol": symbol})
+    return await delta_get("/v2/tickers", {"symbol": symbol})
 
 @mcp.tool()
 async def get_candles(symbol: str, resolution: str = "5m", limit: int = 100) -> dict:
